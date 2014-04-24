@@ -1,0 +1,22 @@
+\documentclass[11pt]{piccola-memoir}
+
+\title{Piccola Barca}
+\author{Ajahn Amaro}
+
+\usepackage{mylayout}
+
+\begin{document}
+
+\input{./src-tex/frontmatter_opening-pages.tex}
+
+\tableofcontents
+
+\chapter{Introduzione}
+\input{./src-tex/frontmatter_intro.tex}
+
+\chapter{Prefazione}
+\input{./src-tex/frontmatter_preface.tex}
+
+\input{./src-tex/text_converted.tex}
+
+\end{document}

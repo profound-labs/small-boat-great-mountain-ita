@@ -1,0 +1,92 @@
+\documentclass[11pt]{memoir}
+
+\title{Piccola Barca, Grande Montagna}
+\author{Ajahn Amaro}
+
+\newcommand{\bookTitle}{Piccola Barca, Grande Montagna}
+
+\usepackage{mylayout}
+
+\begin{document}
+
+\input{./src-tex/frontmatter_opening-pages.tex}
+
+\tableofcontents
+
+\chapter*{Introduzione}
+\addcontentsline{toc}{chapter}{Introduzione}
+\chaptermark{INTRODUZIONE}
+\input{./src-tex/frontmatter_intro.tex}
+
+\chapter*{Prefazione}
+\chaptermark{PREFAZIONE}
+\addcontentsline{toc}{chapter}{Prefazione}
+\input{./src-tex/frontmatter_preface.tex}
+
+\chapter*{RINGRAZIAMENTI}
+\chaptermark{RINGRAZIAMENTI}
+\addcontentsline{toc}{chapter}{Ringraziamenti}
+\input{./src-tex/ringraziamenti.tex}
+
+\chapter*{ESSENZA DELLA MENTE}
+\addcontentsline{toc}{chapter}{ESSENZA DELLA MENTE}
+
+\chapter{REALT\`A ULTIMA E REALT\`A CONVENZIONALE}
+\input{./src-tex/realita-ultima.tex}
+
+\chapter{IL LUOGO DEL NON DIMORARE}
+\input{./src-tex/il-luogo.tex}
+
+\chapter*{ESSERE BUDDHA}
+\addcontentsline{toc}{chapter}{ESSERE BUDDHA}
+
+\chapter{LA VISIONE DELLA FORESTA}
+\input{./src-tex/la-visione.tex}
+
+\chapter{LA CESSAZIONE DELLA COSCIENZA}
+\input{./src-tex/la-cessazione.tex}
+
+\chapter{IMMANENTE E TRASCENDENTE}
+\input{./src-tex/immanente-e-transcendente.tex}
+
+\chapter*{CHI SEI?}
+\addcontentsline{toc}{chapter}{CHI SEI?}
+
+\chapter{NON C'\`E UN BUDDHA ALTROVE}
+\input{./src-tex/non-ce-un-buddha-altrove.tex}
+
+\chapter{SCENDERE DALLA RUOTA}
+\input{./src-tex/scendere-dalla-routa.tex}
+
+\chapter{IL RITIRO PORTATILE}
+\input{./src-tex/il-ritiro-portatile.tex}
+
+\addtocontents{toc}{\protect\clearpage}
+
+\chapter*{CANTI SCELTI}
+\chaptermark{CANTI SCELTI}
+\addcontentsline{toc}{chapter}{Canti Scelti}
+\input{./src-tex/canti-scelti.tex}
+
+\chapter*{Glossario}
+\chaptermark{GLOSSARIO}
+\addcontentsline{toc}{chapter}{Glossario}
+\input{./src-tex/glossary.tex}
+
+\cleardoublepage
+{\thispagestyle{empty}\centering\setlength{\parskip}{1.5em}
+
+\textbf{``Il dono del Dhamma supera ogni altro dono''}
+
+Questo libro è offerto per la distribuzione gratuita, nella speranza che possa essere di beneficio a chi desidera intraprendere un cammino di approfondimento e comprensione del proprio vivere. Per noi del monastero Santacittarama è un grande privilegio rendere disponibili libri come questo, e saremmo felici di continuare a farlo. Riceviamo volentieri i commenti e le osservazioni dei lettori.
+
+I costi di questa pubblicazione sono stati coperti da libere donazioni -- una preziosa opportunità per molti di sponsorizzare iniziative e dedicare la propria offerta, in linea con la tradizione buddhista. Future ristampe di questa o di altre opere dello stesso genere dipendono direttamente dai contributi offerti in tal senso. Chi fosse interessato a partecipare alla sponsorizzazione di ``Doni di Dhamma'' come questo, può contattarci al seguente indirizzo:
+
+MONASTERO SANTACITTARAMA \\
+Località Brulla, I–02030 Frasso Sabino (RI) \\
+(Email: sangha@santacittarama.org)
+
+\textit{Grazie.} 
+
+}
+\end{document}

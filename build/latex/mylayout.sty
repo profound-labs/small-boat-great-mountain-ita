@@ -1,0 +1,236 @@
+\ProvidesPackage{mylayout}
+
+\usepackage{nag}
+
+\usepackage{soul}
+\usepackage{textcomp}
+\usepackage{color}
+\usepackage[italian]{babel}
+\selectlanguage{italian}
+\usepackage[utf8x]{inputenc}
+\usepackage[T1]{fontenc}
+\input{./fontsdef.fd}
+
+\usepackage{geometry}
+\geometry{
+paperwidth=6in,
+paperheight=9in,
+textwidth=4.5in,
+textheight=7in,
+outer=19mm
+}
+\setlength{\stockwidth}{6in}
+\setlength{\stockheight}{9in}
+
+\usepackage{hyperref}
+\hypersetup{
+  bookmarks=true,
+  bookmarksopen=true,
+  bookmarksopenlevel=1,
+  pdftoolbar=true,
+  pdfmenubar=true,
+  colorlinks=true,
+  unicode=true,
+  hyperindex=true,
+  linkcolor=textbody,
+  citecolor=textbody,
+  filecolor=textbody,
+  urlcolor=textbody
+}
+\usepackage{bookmark}
+\bookmarksetup{open=false}
+
+\setcounter{secnumdepth}{0}
+
+% \setlength{\parindent}{1em}
+
+% ====== dealing out some penalties ======
+
+\parfillskip 0pt plus 0.75\textwidth
+% \tolerance 1414
+% \hbadness 1414
+% \emergencystretch 1.5em
+% \hfuzz 0.3pt
+% \vfuzz \hfuzz
+\clubpenalty=9996
+\tolerance=1414
+% \widowpenalty=10000
+\widowpenalty=8500
+\brokenpenalty=6000
+% \finalhyphendemerits=4000
+
+% ====== end of penalties ======
+
+\renewcommand{\rmdefault}{gentium}
+
+% ====== custom macros ======
+
+\newcommand{\pali}[1]{\textit{#1}}
+
+\def\dropcapsfont{\fontfamily{gentium}\fontseries{m}\fontshape{n}\selectfont}
+\newcommand\firstcapsize{\@setfontsize\firstcapsize{13}{25}}
+\newcommand\dropcapsize{\@setfontsize\dropcapsize{10}{13.6}}
+\definecolor{dropcaps}{gray}{0.2}
+\definecolor{firstcaps}{gray}{0.2}
+\sodef\soDropcapsA{}{.1em}{.3em plus.1em}{.4em plus.1em minus.1em}
+\sodef\soDropcapsB{}{.1em}{.3em plus.1em}{.4em plus.1em minus.1em}
+
+\newcommand{\dropcaps}[2]{%
+  {\dropcapsfont\firstcapsize\color{firstcaps}\soDropcapsA{#1}}%
+  {\hspace{.1em}}%
+  {\dropcapsfont\dropcapsize\color{dropcaps}\soDropcapsB{\MakeUppercase{#2}}}%
+}
+
+\renewcommand*\nNamei{\iflowernumtoname u\else U\fi no}
+\renewcommand*\nNameii{\iflowernumtoname d\else D\fi ue}
+\renewcommand*\nNameiii{\iflowernumtoname t\else T\fi re}
+\renewcommand*\nNameiv{\iflowernumtoname q\else Q\fi uattro}
+\renewcommand*\nNamev{\iflowernumtoname c\else C\fi inque}
+\renewcommand*\nNamevi{\iflowernumtoname s\else S\fi ei}
+\renewcommand*\nNamevii{\iflowernumtoname s\else S\fi ette}
+\renewcommand*\nNameviii{\iflowernumtoname o\else O\fi tto}
+
+
+\definecolor{textbody}{gray}{0.15}
+\renewcommand{\normalsize}{%
+%    \@setfontsize\normalsize\@xipt{13.6}%
+   \@setfontsize\normalsize{10.5}{15}%
+   \abovedisplayskip 11\p@ \@plus3\p@ \@minus6\p@
+   \abovedisplayshortskip \z@ \@plus3\p@
+   \belowdisplayshortskip 6.5\p@ \@plus3.5\p@ \@minus3\p@
+   \belowdisplayskip \abovedisplayskip
+   \color{textbody}
+   \let\@listi\@listI}
+
+% ====== end of custom macros ======
+
+% ====== TOC settings ======
+
+% \maxtocdepth{chapter}
+
+% \newlength{\toctopskip}
+% \setlength{\toctopskip}{27pt}
+% \addtolength{\toctopskip}{2\baselineskip}
+% 
+% \renewcommand{\printtoctitle}[1]{%
+% \raggedright\vspace*{\toctopskip}\hspace*{17pt}\parbox{0.8\linewidth}{\raggedright\chaptitlefont\color{chapter}\soChapter{CONTENTS}}}
+
+\renewcommand{\cftchapterfont}{\fontfamily{arno-pro}\fontseries{m}\fontshape{n}\selectfont\large\color{textbody}}
+\renewcommand{\cftchapterpagefont}{\fontfamily{gentium}\fontseries{m}\fontshape{n}\selectfont\normalsize\color{textbody}}
+% \renewcommand{\cftchapterpresnum}[1]{}
+% \setlength{\cftchapternumwidth}{0pt}
+
+% ====== end of TOC settings ======
+
+% ====== page styles ======
+
+% \sodef\soSection{}{.1em}{.5em plus.1em}{.1em plus.1em minus.1em}
+
+\setlength{\headheight}{1.2\baselineskip}
+\setlength{\headsep}{0.8em}
+
+% \makepagestyle{customheadings}
+%   \makeheadrule{customheadings}{\textwidth}{0.25pt}
+%   \makepsmarks{customheadings}{%
+%     \def\chaptermark##1{\markboth{\memUChead{##1}}{}}%
+%     \def\tocmark{\markboth{\memUChead{\contentsname}}{\memUChead{\contentsname}}}%
+%     \def\lofmark{\markboth{\memUChead{\listfigurename}}{\memUChead{\listfigurename}}}%
+%     \def\lotmark{\markboth{\memUChead{\listtablename}}{\memUChead{\listtablename}}}%
+%     \def\bibmark{\markboth{\memUChead{\bibname}}{\memUChead{\bibname}}}%
+%     \def\indexmark{\markboth{\memUChead{\indexname}}{\memUChead{\indexname}}}%
+%     \def\sectionmark##1{\markright{\memUChead{##1}}}}
+%   \makepsmarks{customheadings}{%
+%     \createmark{chapter}{left}{nonumber}{}{}
+%     \createmark{section}{right}{nonumber}{}{}
+%     \createplainmark{toc}{both}{\contentsname}
+%     \createplainmark{lof}{both}{\listfigurename}
+%     \createplainmark{lot}{both}{\listtablename}
+%     \createplainmark{bib}{both}{\bibname}
+%     \createplainmark{index}{both}{\indexname}
+%     \createplainmark{glossary}{both}{\glossaryname}
+%   }
+%   \makeevenhead{customheadings}{}{\fontfamily{laudatio-light}\fontseries{m}\fontshape{n}\selectfont\tiny\leftmark}{}
+%   \makeoddhead{customheadings}{}{\fontfamily{laudatio-light}\fontseries{m}\fontshape{n}\selectfont\tiny\rightmark}{}
+%   \makeevenfoot{customheadings}{}{\thepage}{}
+%   \makeoddfoot{customheadings}{}{\thepage}{}
+% 
+% \pagestyle{customheadings}
+
+
+\makepagestyle{customheadings}
+  \makepsmarks{customheadings}{%
+    \def\chaptermark##1{\markboth{\memUChead{##1}}{}}%
+    \def\tocmark{\markboth{\memUChead{\contentsname}}{\memUChead{\contentsname}}}%
+    \def\lofmark{\markboth{\memUChead{\listfigurename}}{\memUChead{\listfigurename}}}%
+    \def\lotmark{\markboth{\memUChead{\listtablename}}{\memUChead{\listtablename}}}%
+    \def\bibmark{\markboth{\memUChead{\bibname}}{\memUChead{\bibname}}}%
+    \def\indexmark{\markboth{\memUChead{\indexname}}{\memUChead{\indexname}}}%
+    \def\sectionmark##1{\markright{\memUChead{##1}}}}
+  \makepsmarks{customheadings}{%
+    \createmark{chapter}{left}{nonumber}{}{}
+    \createmark{section}{right}{nonumber}{}{}
+    \createplainmark{toc}{both}{\contentsname}
+    \createplainmark{lof}{both}{\listfigurename}
+    \createplainmark{lot}{both}{\listtablename}
+    \createplainmark{bib}{both}{\bibname}
+    \createplainmark{index}{both}{\indexname}
+    \createplainmark{glossary}{both}{\glossaryname}
+  }
+  \makeevenhead{customheadings}{}{\fontfamily{arno-pro}\fontseries{m}\fontshape{n}\selectfont\small PICCOLA BARCA, GRANDE MONTAGNA}{}
+  \makeoddhead{customheadings}{}{\fontfamily{arno-pro}\fontseries{m}\fontshape{n}\selectfont\small \leftmark}{}
+  \makeevenfoot{customheadings}{}{\thepage}{}
+  \makeoddfoot{customheadings}{}{\thepage}{}
+
+\pagestyle{customheadings}
+
+% ====== end of page styles ======
+
+% ====== chapter style ======
+
+\sodef\soChapter{}{.1em}{.5em plus.1em}{.1em plus.1em minus.1em}
+\definecolor{chapter}{gray}{0.3}
+\definecolor{chapternum}{gray}{0.6}
+
+\makechapterstyle{piccolachapter}{%
+  \chapterstyle{default}
+  \setlength{\beforechapskip}{0em}
+  \setlength{\midchapskip}{1em}
+  \setlength{\afterchapskip}{2em}
+  \renewcommand*{\chapnumfont}{\fontfamily{arno-pro}\fontseries{m}\fontshape{n}\selectfont\LARGE}
+  \renewcommand*{\chapnamefont}{\fontfamily{arno-pro}\fontseries{m}\fontshape{n}\selectfont\Large}
+  \renewcommand*{\chaptitlefont}{\fontfamily{arno-pro}\fontseries{m}\fontshape{n}\selectfont\Large}
+  \renewcommand*{\printchaptername}{}
+  \renewcommand*{\printchapternum}{\chapnumfont\color{chapternum}\centering Capitolo \numtoName{\thechapter}}
+%   \renewcommand*{\printchapternonum}{\centering}
+  \renewcommand*{\printchaptertitle}[1]{%
+    \centering \chaptitlefont\color{chapter}\soChapter{\MakeUppercase{##1}}}
+}
+
+\chapterstyle{piccolachapter}
+
+
+% ====== end of chapter style ======
+
+% ====== section style ======
+
+\setsecheadstyle{\Large\upshape\memRTLraggedright}
+\setsubsecheadstyle{\large\itshape\memRTLraggedright}
+\setsubsubsecheadstyle{\normalsize\itshape\memRTLraggedright}
+
+% ====== end of section style ======
+
+% ====== environments ======
+
+% ====== end of environments ======
+
+% ====== settings to go last ======
+
+\usepackage[perpage,multiple,stable,symbol*]{footmisc}
+\DefineFNsymbols*{stars}{{*}{**}{***}{4}{5}{6}{7}{8}{9}{10}}
+\setfnsymbol{stars}
+
+\usepackage{microtype}
+\microtypesetup{
+babel=true,
+final,
+}

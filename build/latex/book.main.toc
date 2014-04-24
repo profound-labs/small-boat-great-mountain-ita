@@ -1,0 +1,34 @@
+\select@language {italian}
+\select@language {italian}
+\contentsline {chapter}{Indice}{8}{section*.1}
+\contentsline {chapter}{Introduzione}{11}{chapter*.2}
+\contentsline {chapter}{Prefazione}{13}{chapter*.3}
+\contentsline {chapter}{Ringraziamenti}{19}{chapter*.4}
+\contentsline {chapter}{ESSENZA DELLA MENTE}{21}{chapter*.5}
+\contentsline {chapter}{\chapternumberline {1}REALT\`A ULTIMA E REALT\`A CONVENZIONALE}{23}{chapter.1}
+\contentsline {chapter}{\chapternumberline {2}IL LUOGO DEL NON DIMORARE}{33}{chapter.2}
+\contentsline {chapter}{ESSERE BUDDHA}{47}{chapter*.19}
+\contentsline {chapter}{\chapternumberline {3}LA VISIONE DELLA FORESTA}{49}{chapter.3}
+\contentsline {chapter}{\chapternumberline {4}LA CESSAZIONE DELLA COSCIENZA}{65}{chapter.4}
+\contentsline {chapter}{\chapternumberline {5}IMMANENTE E TRASCENDENTE}{79}{chapter.5}
+\contentsline {chapter}{CHI SEI?}{97}{chapter*.40}
+\contentsline {chapter}{\chapternumberline {6}NON C'\`E UN BUDDHA ALTROVE}{99}{chapter.6}
+\contentsline {chapter}{\chapternumberline {7}SCENDERE DALLA RUOTA}{117}{chapter.7}
+\contentsline {chapter}{\chapternumberline {8}IL RITIRO PORTATILE}{139}{chapter.8}
+\clearpage 
+\contentsline {chapter}{Canti Scelti}{147}{chapter*.63}
+\contentsline {section}{Prendere rifugio}{147}{section*.64}
+\contentsline {section}{Prendere il rifugio in via ordinaria e suscitare il bodhicitta}{147}{section*.65}
+\contentsline {section}{Prendere il rifugio in via straordinaria}{148}{section*.66}
+\contentsline {section}{La dedicazione del merito di N\IeC {\=a}g\IeC {\=a}rjuna}{148}{section*.67}
+\contentsline {section}{Riflessioni sulla condivisione del bene}{148}{section*.68}
+\contentsline {section}{Le parole del Buddha sulla gentilezza amorevole}{149}{section*.69}
+\contentsline {section}{Il mantra Vajrasatva delle cento sillabe}{151}{section*.70}
+\contentsline {section}{Il canto Vajra del primo Tsoknyi Rinpoche}{151}{section*.71}
+\contentsline {section}{Emanazione delle dimore sublimi}{152}{section*.72}
+\contentsline {section}{Aspirazione al Bodhicitta}{153}{section*.73}
+\contentsline {section}{Evocazione straordinaria del Bodhicitta}{153}{section*.74}
+\contentsline {section}{Riflessioni sul benessere universale}{153}{section*.75}
+\contentsline {section}{L'origine dipendente e la cessazione}{154}{section*.76}
+\contentsline {section}{I cinque precetti}{156}{section*.77}
+\contentsline {chapter}{Glossario}{159}{chapter*.78}
